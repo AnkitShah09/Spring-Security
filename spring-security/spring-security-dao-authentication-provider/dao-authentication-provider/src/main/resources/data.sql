@@ -1,0 +1,3 @@
+INSERT INTO user_info (id, username, password, roles) VALUES (1, 'user1', '$2a$12$vKfXDQxldDW5ZtIoAxad4et42.jKfAOMbiVh514pYMDbB9RFe6tD6', 'USER');
+INSERT INTO user_info (id, username, password, roles) VALUES (2, 'user2', '$2a$12$PpapzGtudcVXMlr2dUgcWeXgJmXDTh46Z19C3oGVBGskhBbVbbjtO', 'USER');
+INSERT INTO user_info (id, username, password, roles) VALUES (3, 'admin', '$2a$12$nyWyqZ57aj/CcJWvsyaxe.XkbFTZfD6FIXsRjavloxbmxmqE7u6Ae', 'ADMIN');
