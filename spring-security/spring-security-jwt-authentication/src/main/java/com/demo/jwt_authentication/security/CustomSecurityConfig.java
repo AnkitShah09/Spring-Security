@@ -30,7 +30,7 @@ public class CustomSecurityConfig {
                 .authorizeHttpRequests(
                         requests -> requests
                                 .requestMatchers("/h2-console/**").permitAll()
-                                .requestMatchers("/users").hasAuthority("ADMIN")
+                                .requestMatchers("/private").hasAuthority("ADMIN")
                                 .anyRequest().authenticated()
                 )
                 .build();

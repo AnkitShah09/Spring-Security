@@ -9,13 +9,13 @@ import java.util.List;
 @RestController
 public class UsersController {
 
-    @GetMapping("/home")
-    @PreAuthorize("hasAnyAuthority('USER')")
+    @GetMapping("/public")
+    @PreAuthorize("hasAnyAuthority('USER', 'ADMIN')")
     public String getHomePage() {
         return "This is home page!!!";
     }
 
-    @GetMapping("/users")
+    @GetMapping("/private")
     public List<String> getUsers() {
         return List.of("u1", "u2", "u3");
     }
